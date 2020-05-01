@@ -1,8 +1,18 @@
-li {
-  cursor: pointer;
+/*-------------------- COMMON --------------------*/
+body {
+  font-family: 'Kanit', sans-serif;
 }
 
-/* animation rules */
+li {
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.title {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+}
+
 @-webkit-keyframes AnimationName {
     0%   { background-position:   0%  7% }
     50%  { background-position: 100% 94% }
@@ -27,15 +37,21 @@ li {
   100% { background-position:   0%  7% }
 }
   
-/*NAVBAR*/
+/*-------------------- NAVBAR --------------------*/
 #navbar-container {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
   max-width: 100%;
   margin: 0 0 0 0;
-  padding: 0 0 0 0;
+}
+
+.navbar-brand {
+  font-size: 1.75rem!important;
+  font-weight: 500;
 }
 
 .navbar {
-  padding: 5px 200px;
+  padding: 10px 200px;
   background: rgba(255, 255, 255, 0.8)!important;
   transition: all 0.2s ease-in;
 }
@@ -55,12 +71,12 @@ li {
         }
 }
  
-/*INTRO*/  
+/*-------------------- INTRO --------------------*/
 #intro-container {
-  padding: 50px 0 0 0!important;
+  padding: 155px 0 0 0!important;
   max-width: 100%!important;
   margin: 0 0!important;
-  background: linear-gradient(135deg, rgba(251, 159, 0, 0.5), rgba(255, 133, 27, 0.5), rgba(220, 20, 60, 0.5), rgba(156, 89, 182, 0.5), rgba(68, 132, 206, 0.5), rgba(34, 139, 34, 0.5), rgba(255, 217, 0, 0.5));
+  background: linear-gradient(135deg, rgba(251, 159, 0, 0.15), rgba(255, 133, 27, 0.15), rgba(220, 20, 60, 0.15), rgba(156, 89, 182, 0.15), rgba(68, 132, 206, 0.15), rgba(34, 139, 34, 0.15), rgba(255, 217, 0, 0.15));
   background-size: 1200% 1200%;
   -webkit-animation: AnimationName 85s ease infinite;
   -moz-animation: AnimationName 85s ease infinite;
@@ -72,108 +88,232 @@ li {
 
 #intro-container-image {
   max-width: 100%!important;
-  height: 390px!important;
+  height: 600px!important;
   background-image: url("../images/mountain-range.png");
   background-repeat: no-repeat;
 }
 
+#intro-container-text a {
+  text-decoration: none!important;
+}
+
 #intro-container-text {
-  padding: 125px 0 0 0;
+  padding: 25px 0 0 0;
+}
+
+#intro-container-text h1 {
+  color: rgba(0, 0, 0, 0.65);
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-size: 4.75rem;
+}
+
+#intro-container-text h5 {
+  color: rgba(0, 0, 0, 0.65);
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  padding: 0 0 20px 0;
 }
 
 .icons {
-  color: white;
+  color: rgba(255, 255, 255, 1.0);
   padding-left: 5px;
   padding-right: 5px;
   transition: all 0.8s;
 }
 
 .icons:hover {
-  color: rgba(0, 0, 255, 0.75);
+  color: rgba(0, 0, 0, 0.65);
 }
   
-/*ABOUT*/
+/*-------------------- ABOUT --------------------*/
 #about-container {
-  margin: 40px auto!important;
+  margin: 80px auto 120px auto!important;
+}
 
+#about-container-inner {
+  margin: 60px auto!important;
 }
 
 #about-container p {
-  margin: 20px 0px!important;
-  font-family: 'Raleway';
-  font-size: 25px;
+  margin: 40px 0px!important;
+  font-weight: 400;
   color: #BDBAB9;
-
 }
 
 #profile-pic {
-  margin: 20px 40px 30px 0px!important;
+  box-shadow: 5px 5px 5px 0px rgba(128, 128, 128, 1.0);
+  margin: 0px 60px 0px 0px!important;
   shape-outside: circle();
   border-radius: 50%;
-  border: 2px solid black;
+  border: 5px double rgba(0, 0, 0, 0.65);
   width: 275px;
   height: 275px;
-  background: linear-gradient(135deg, rgba(251, 159, 0, 0.5), rgba(255, 133, 27, 0.5), rgba(220, 20, 60, 0.5), rgba(156, 89, 182, 0.5), rgba(68, 132, 206, 0.5), rgba(34, 139, 34, 0.5), rgba(255, 217, 0, 0.5));
+  background: linear-gradient(135deg, rgba(251, 159, 0, 0.15), rgba(255, 133, 27, 0.15), rgba(220, 20, 60, 0.15), rgba(156, 89, 182, 0.15), rgba(68, 132, 206, 0.15), rgba(34, 139, 34, 0.15), rgba(255, 217, 0, 0.15));
   background-size: 600% 600%;
   -webkit-animation: AnimationName 85s ease infinite;
   -moz-animation: AnimationName 85s ease infinite;
   -o-animation: AnimationName 85s ease infinite;
   animation: AnimationName 85s ease infinite;
 }
-  
- 
-  
 
-  
-  
-  /*PORTFOLIO*/
-  #portfolio-container {
-    clear:left;
-  }
-  
-  
-  
-  /*CONTACT*/
-  
-  #contact-container {
+/*-------------------- SKILLS --------------------*/
+#skills-container {
+  margin: 100px auto!important;
+}  
 
-    background-color: #a1edf0;
-  }
+.skill-card {
+  padding: 20px 20px;
+  box-shadow: 5px 5px 5px 0px rgba(128, 128, 128, 1.0);
+  border: 5px double rgba(0, 0, 0, 0.65);
+  border-radius: 25px;
+  height: 475px;
+}
+
+.skill-card-column-icon {
+  height: 40px; 
+  width: 40px;
+  display: block;
+  margin: 0 auto 5px auto;
+  background-color: rgba(255, 255, 255, 1.0);
+}
+
+.skill-card-item{
+  width: 100%;
+  padding: 5px 0px 5px 10px;
+}
+
+.skill-card-icon {
+  border-radius: 10px;
+  height: 25px;
+  width: 25px;
+  margin: 0 5px 0 0;
+}
+
+.skill-card-icon-title {
+  font-size: 1.25rem;
+}
+
+
+.skill_item{
+  background-color: white;
+  border-radius: 25px;
+  color: black;
+  margin: 1em;
+  padding: 1em;
+  height: 37em;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.skill_item h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.skill_item h4 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+}
+
+.skill_item div {
+  padding: 0.75em;
+  width: 100%;
+  float: left;
+}
+
+#skills_title {
+  background-color: transparent;
+  color: black;
+  padding: 0.1em;
+}
+
+
+
+
+
+#express_logo{
+  height: 1em;
+  margin: 1em 0.5em 1em 0
+}
+
+.skill-card-icons{
+  max-height: 3em; 
+  max-width: 3em;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+/*-------------------- PORTFOLIO --------------------*/
+#portfolio-container {
+  margin: 80px 0 0 0;
+}  
   
-  .contact-container h2 {
-    margin-bottom: 20px;
-  }
+/*-------------------- CONTACT --------------------*/
+#contact-container {
+  max-width: 100%!important;
+  background-color: #a1edf0;
+}
+
+#contact-container h1 {
+  font-size: 4rem;
+  margin: 0!important;
+  padding: 70px 0px 100px 0px;
+}
+
+#contact-container-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 165px 0;
+}
+
+.contact-container-icon {
+  margin: 60px;
+  display: inline-block;
+}
   
-  .contact-text {
-    display: flex;
-    margin: 30px;
-    flex-wrap: wrap;
-    background-color: #fff;
-    padding: 50px;
-    border-radius: 15px;
-  }
-  
-  .contact-text div {
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 200px;
-  }
-  
-  .contact-text a {
-    text-decoration: none;
-    color: #000;
-  }
-  
-  .contact-hover {
-    margin-top: 15px;
-  }
-  
-  .contact-text .contact-hover:hover {
-    color: #fff;
-    background-color: #000;
-  }
+/*-------------------- FOOTER --------------------*/
+#footer-container {
+  background-color: #a1edf0;
+  padding: 0 0 20px 0!important;
+}
+
+#footer-container a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#footer-container a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   .animated {
     animation: pop-up cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -258,219 +398,3 @@ li {
     text-decoration: underline;
     color: #fff;
   }
-  
-
-  
-
-
-
-
-
-
-
-
-
-
-
-#top-navbar-links {
-    margin-right: 0px;
-}
-
-/* Navbar Links Contents*/
-#top-navbar-1 ul li a {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 14px;
-    color: white;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-
-/* ---------- Nav Button Hover Effect ---------- */
-
-.nav_btn {
-    position: relative;
-}
-
-.nav_btn:after {
-    position: absolute;
-    bottom: 2px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '.';
-    color: transparent;
-    background: #aaa;
-    height: 3px;
-}
-
-
-
-.nav_btn:hover:after {
-    width: 100%;
-}
-.nav_btn {
-    transition: all 2s;
-}
-.nav_btn:after {
-    text-align: left;
-    content: '.';
-    margin: 0;
-    opacity: 0;
-}
-
-.nav_btn:hover {
-    color: #fff;
-    z-index: 1;
-}
-
-.nav_btn:hover:after {
-    z-index: -10;
-    animation: fill 1s forwards;
-    -webkit-animation: fill 1s forwards;
-    -moz-animation: fill 1s forwards;
-    opacity: 1;
-}
-
-
-
-/* ---------- Skills Section ---------- */
-
-#skillspage {
-    background-color: #2F2F2F;
-    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
-    font-family: "Raleway";
-}
-
-#skillspage .row {
-    width: 60%;
-    margin: 0 auto;
-    padding-bottom: 2em;
-}
-
-.skill_item{
-    background-color: white;
-    border-radius: 25px;
-    color: black;
-    margin: 1em;
-    padding: 1em;
-    height: 37em;
-    width: 100%;
-    overflow: hidden;
-}
-
-
-.skill_item h3 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-}
-
-.skill_item h4 {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 15px;
-}
-
-.skill_item div {
-    padding: 0.75em;
-    width: 100%;
-    float: left;
-}
-
-#front_end_card div {
-    width: 50%;
-}
-
-.skill_item_title {
-    text-align: center;
-}
-
-#skills_title {
-    background-color: transparent;
-    color: black;
-    padding: 0.1em;
-}
-
-/* .skill_list_item {}
-
-
-.skill_col {} */
-
-
-
-.programming_logos{
-    height: 3em;
-    width: 3em;
-    margin-right: 0.5em;
-    float: left;
-}
-
-#express_logo{
-    height: 1em;
-    margin: 1em 0.5em 1em 0
-}
-
-.skillcard_icons{
-    max-height: 3em; 
-    max-width: 3em;
-    display: block;
-    margin: 0 auto;
-}
-
-.card-5 {
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-  }
-
-  /* ---------- Resume section ---------- */
-
-  #resumepage {
-    background-color: #2B2B2B;
-    /* background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%); */
-    color: white;
-}
-
-#resumetitle {
-    background-color: transparent;
-    color: white;
-    padding: 0.3em;
-}
-
-.resume_view {
-    margin: 0 auto;
-    display: table;
-    padding-bottom: 6em;
-    height: 1250px;
-    width: 800px;
-}
-
-/* ---------------------------- */
-
-/* ---------- Contact Section ---------- */
-
-#contactpage {
-    background-color: skyblue;
-    color: white;
-    padding-bottom: 3em;
-   
-}
-
-#stack{
-    color: white;
-}
-
-#stack:hover{
-    color: pink;
-   
-
-}
-
-
-.contact_content {
-    padding-top: 2em;
-    margin: 0 auto;
-    text-align: center;
-}
-
-
-
-/* ---------------------------- */

@@ -4,11 +4,11 @@ function setScrollingEvent(){
   });
 
   $('#about').click(function(){
-      $('#about-container').animatescroll({padding: 75});
+      $('#about-container').animatescroll({padding: 150});
   });
 
   $('#skills').click(function(){
-      $('#skills-container').animatescroll({padding: 50});
+      $('#skills-container').animatescroll({padding: 100});
   });
 
   $('#portfolio').click(function(){
@@ -16,7 +16,7 @@ function setScrollingEvent(){
   })
 
   $('#contact').click(function(){
-      $('#contact-container').animatescroll({padding:50});
+      $('#contact-container').animatescroll({padding: 25});
   });
 }   
 

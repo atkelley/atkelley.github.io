@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Andrew Kelley</title>
+    <title>Andrew T. Kelley</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico" />
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   
     <link href="https://fonts.googleapis.com/css?family=Lato:300,700,900" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/67ce07cfe8.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
-
   </head>
   <body>
     <div class="container" id="navbar-container">
@@ -51,7 +51,7 @@
               <i class ="fa fa-github fa-3x icons"></i>
             </a>
             <a target="_blank" href="mailto:kelley.andrew.t@gmail.com">
-              <i class ="fa fa-envelope-o fa-3x icons"></i>
+              <i class ="far fa-envelope fa-3x icons"></i>
             </a>
           </div>
         </div>
@@ -59,65 +59,84 @@
     </div>
   
     <div class="container" id="about-container">
-      <h1 class="text-center">About</h1>
+      <h1 class="text-center title pb-4">About</h1>
       <hr>
-      <img src="assets/images/peekabot.png" alt="peekaboo" class="float-left" id="profile-pic">         
-      <p>
-        Hello! I am the cubicle-critter, roaming your office in search of snacks and dispensing sage observations when your code doesn't work. 
-        I'm a Massachusetts native, music-lover and coding fanatic. I enjoy the finer things in life such as: solving compex problems, 
-        data structures and Adidas tracksuits. When I'm not coding you can find me at the gym or outdoors hike.
-      </p> 
-      <p>
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', 
-        making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, 
-        and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, 
-        sometimes by accident, sometimes on purpose (injected humour and the like).
-      </p>      
+      <div class="container" id="about-container-inner">
+        <img src="assets/images/peekabot.png" alt="peekaboo" class="float-left" id="profile-pic">       
+        <p>
+          Hello! I am the cubicle-critter, roaming your office in search of snacks and dispensing sage observations when your code doesn't work. 
+          I'm a Massachusetts native, music-lover and coding fanatic. I enjoy the finer things in life such as: solving compex problems, 
+          data structures and Adidas tracksuits. When I'm not coding you can find me at the gym or outdoors hike.
+        </p> 
+        <p>
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+          The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', 
+          making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, 
+          and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, 
+          sometimes by accident, sometimes on purpose (injected humour and the like).
+        </p>   
+      </div>
+      <hr>
     </div>
   
     <div class="container" id="skills-container">
+      <h1 class="text-center title">Skills</h1>
+      <hr>
       <div class="row">
-        <div class="col-md-12">
-          <h1 class="text-center">Skills</h1>
-          <hr>
+        <div class="col-md-3 mt-3">
+          <div class="skill-card">
+            <image class="skill-card-column-icon" src="assets/images/frontend.png" alt="frontend"></image>
+            <h3 class="text-center title">Frontend</h3>
+            <hr>
+            <div class="skill-card-item"><image src="assets/images/html5.png" class="skill-card-icon"></image><span class="skill-card-icon-title">HTML5</span></div>
+            <div class="skill-card-item"><image src="assets/images/css3.png" class="skill-card-icon"></image><span class="skill-card-icon-title">CSS3</span></div>
+            <div class="skill-card-item"><image src="assets/images/bootstrap.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Bootstrap</span></div>
+            <div class="skill-card-item"><image src="assets/images/materialize.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Materialize</span></div>
+            <div class="skill-card-item"><image src="assets/images/semantic-ui.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Semantic UI</span></div>
+          </div>     
         </div>
-      </div>         
 
-      <div class = "container">
-        <div class = "row">
-          <div class = "col-md-6 col-lg-4 skill_col ">
-            <div class="skill_item card-5" id="front_end_card">
-              <image class="skillcard_icons"src = "http://s.apptoko.com/a//uploads/thumbnails/022015/click-ui-icon-pack_icon.png"></image>
-              <h3 class ="skill_item_title">Design</h3>
-              <div><image class = "programming_logos"src ="http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png"></image><h4>HTML5*</h4></div>
-              <div><image class = "programming_logos"src ="https://raw.githubusercontent.com/evereq/handlebars.js.nuget/master/images/handlebars.png"></image><h4>HandleBars</h4></div>
-              <div><image class = "programming_logos"src ="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-social-logo.png"></image><h4>Bootstrap</h4></div>
-              <!-- <div><image class = "programming_logos"src ="https://www.deligence.com/images/technologies/materialize-logo.png"></image><h4>Materialize</h4></div> -->
-              <div><image class = "programming_logos"src ="https://cdn.glitch.com/project-avatar/a52f05ee-99e3-4b62-a0cb-4e40141c42b7.png"></image><h4>SASS4.1.0</h4></div>
-              <div><image class = "programming_logos"src ="https://www.polymer-project.org/images/logos/p-logo.png"></image><h4>Material-UI</h4></div>
-            </div>     
-          </div>
+        <div class="col-md-3 mt-3">
+          <div class="skill-card">
+            <image class="skill-card-column-icon" src="assets/images/languages.png" alt="backend"></image>
+            <h3 class="text-center title">Languages</h3>
+            <hr>
+            <div class="skill-card-item"><image src="assets/images/java.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Java</span></div>
+            <div class="skill-card-item"><image src="assets/images/javascript.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Javascript</span></div>
+            <div class="skill-card-item"><image src="assets/images/jquery.png" class="skill-card-icon"></image><span class="skill-card-icon-title">jQuery</span></div>
+            <div class="skill-card-item"><image src="assets/images/node.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Node</span></div>
+            <div class="skill-card-item"><image src="assets/images/php.png" class="skill-card-icon"></image><span class="skill-card-icon-title">PHP</span></div>
+            <div class="skill-card-item"><image src="assets/images/python.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Python</span></div>
+            <div class="skill-card-item"><image src="assets/images/ruby.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Ruby</span></div>
+          </div>     
+        </div>
 
-          <div class = "col-md-6 col-lg-4 skill_col ">                            
-            <div class="skill_item card-5">
-              <image class="skillcard_icons"src = "https://cdn1.iconfinder.com/data/icons/education-set-5/512/development-512.png"></image>
-              <h3 class ="skill_item_title">Environment</h3>
-              <div><image class = "programming_logos"src ="https://camo.githubusercontent.com/6c85b8e12a64c5d7150873d6d38c193a611e7fa8/687474703a2f2f636f64652d6d6176656e2e636f6d2f696d672f6e6f64652e706e67"></image><h4>Node.js</h4></div>
-              <div><image id="express_logo" class = "programming_logos"src ="https://ptbopodcasters.ca/wp-content/uploads/2016/09/pip-icon.png"></image><h4>Virtualenv</h4></div>
-              <!-- <div><image class = "programming_logos"src ="https://png2.kisspng.com/20180515/sq/kisspng-foundations-of-python-network-programming-computer-5afac9d7ba2795.3339305015263851117625.png"></image><h4>ec2</h4></div> -->
-            </div>   
-          </div>
+        <div class="col-md-3 mt-3">                            
+          <div class="skill-card">
+            <image class="skill-card-column-icon" src="assets/images/frameworks.png" alt="frameworks"></image>
+            <h3 class="text-center title">Frameworks</h3>
+            <hr>
+            <div class="skill-card-item"><image src="assets/images/angular.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Angular</span></div>
+            <div class="skill-card-item"><image src="assets/images/react.png" class="skill-card-icon"></image><span class="skill-card-icon-title">React</span></div>
+            <div class="skill-card-item"><image src="assets/images/redux.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Redux</span></div>
+            <div class="skill-card-item"><image src="assets/images/django.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Django</span></div>
+            <div class="skill-card-item"><image src="assets/images/rails.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Rails</span></div>
+          </div>   
+        </div>
 
-          <div class="col-md-6 col-lg-4 skill_col">
-            <div class="skill_item card-5">
-              <image class="skillcard_icons"src = "https://cdn1.iconfinder.com/data/icons/business-programming/512/database_3-512.png"></image>
-              <h3 class ="skill_item_title">Database</h3>
-              <div><image class = "programming_logos"src ="https://www.mysql.com/common/logos/logo-mysql-170x115.png"></image><h4>MySql</h4></div>
-              <div><image class = "programming_logos"src ="https://www.freebsdnews.com/wp-content/uploads/mongodb.png"></image><h4>MongoDB</h4></div>
-              <div><image class = "programming_logos"src ="https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/postgres/logo.png"></image><h4>PostgreSQL</h4></div>
-            </div>     
-          </div>
+        <div class="col-md-3 mt-3">
+          <div class="skill-card">
+            <image class="skill-card-column-icon" src="assets/images/backend.png" alt="backend"></image>
+            <h3 class="text-center title">Backend</h3>
+            <hr>
+            <div class="skill-card-item"><image src="assets/images/sql.png" class="skill-card-icon"></image><span class="skill-card-icon-title">SQL</span></div>
+            <div class="skill-card-item"><image src="assets/images/mysql.png" class="skill-card-icon"></image><span class="skill-card-icon-title">MySQL</span></div>
+            <div class="skill-card-item"><image src="assets/images/sql-server.png" class="skill-card-icon"></image><span class="skill-card-icon-title">SQL Server</span></div>
+            <div class="skill-card-item"><image src="assets/images/postgresql.png" class="skill-card-icon"></image><span class="skill-card-icon-title">PostgreSQL</span></div>
+            <div class="skill-card-item"><image src="assets/images/mongo.png" class="skill-card-icon"></image><span class="skill-card-icon-title">MongoDB</span></div>
+            <div class="skill-card-item"><image src="assets/images/git.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Git</span></div>
+            <div class="skill-card-item"><image src="assets/images/heroku.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Heroku</span></div>
+          </div>     
         </div>
       </div>
     </div>
@@ -125,7 +144,7 @@
     <div class="container" id="portfolio-container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-center">Portfolio</h1>
+          <h1 class="text-center title">Portfolio</h1>
         </div>
       </div>
 
@@ -171,32 +190,32 @@
 
     <div class="container" id="contact-container">
       <div class="row">
-        <div class="section-title col-md-12 text-center">
-          <h1>Contact</h1>
+        <div class="col-md-12">
+          <h1 class="text-center title">Contact</h1>
         </div>
       </div>
-      <div class="row">
-        <div class="revealPopUp one">
-          <a href="mailto:kelley.andrew.t@gmail.com"><i class="fas fa-envelope fa-5x"></i></a>
-          <a href="mailto:kelley.andrew.t@gmail.com" class="contact-hover">kelley.andrew.t@gmail.com</a>
+      <div id="contact-container-box">
+        <div class="contact-container-icon">
+          <a target="_blank" href="https://www.linkedin.com/in/andrew-kelley-t/">
+            <i class ="fab fa-linkedin fa-7x icons"></i>
+          </a>
         </div>
-        <div class="revealPopUp two">
-          <a href="https://github.com/akelley" target="_blank"><i class="fab fa-github fa-5x"></i></a>
-          <a href="https://github.com/akelley" target="_blank" class="contact-hover">Github</a>
+        <div class="contact-container-icon">
+          <a target="_blank" href="https://github.com/atkelley">
+            <i class ="fab fa-github fa-7x icons"></i>
+          </a>
         </div>
-        <div class="revealPopUp three">
-          <a href="https://www.linkedin.com/in/andrew-kelley-t/" target="_blank"><i class="fab fa-linkedin fa-5x"></i></a>
-          <a href="https://www.linkedin.com/in/andrew-kelley-t/" target="_blank" class="contact-hover">LinkedIn</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <h3 class="small">&copy; 2020 Andrew Kelley</h3>
+        <div class="contact-container-icon">
+          <a target="_blank" href="mailto:kelley.andrew.t@gmail.com">
+            <i class ="far fa-envelope fa-7x icons"></i>
+          </a>
         </div>
       </div>
     </div>
 
-
+    <footer class="footer py-2 text-center" id="footer-container">
+      <span class="text-muted">&copy; 2020 <a target="_blank" href="https://ak-47.biz">AK-47</a></span>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
