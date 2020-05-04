@@ -12,7 +12,7 @@ function setScrollingEvent(){
   });
 
   $('#portfolio').click(function(){
-      $('#portfolio-container').animatescroll({padding: 50});
+      $('#portfolio-container').animatescroll({padding: 100});
   })
 
   $('#contact').click(function(){
