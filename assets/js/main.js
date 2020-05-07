@@ -16,13 +16,7 @@ function setScrollingEvent(){
   })
 
   $('#contact').click(function(){
-    if(navigator.userAgent.search(/webkit/i)>0) { // Chrome, Safari
-      $('#contact-container').animatescroll({padding: 25});
-    } else if(navigator.userAgent.search(/gecko/i)>0) { // Firefox
-      $('#contact-container').animatescroll({padding: 0});
-    } else if(navigator.userAgent.search(/???/i)>0){  // Others
-      $('#contact-container').animatescroll({padding:0});
-    } 
+    $('#contact-container').animatescroll({padding: 25});
   });
 }   
 
