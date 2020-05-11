@@ -145,9 +145,9 @@ li {
 
 #profile-pic {
   box-shadow: 5px 5px 5px 0px rgba(128, 128, 128, 1.0);
-  margin: 0px 60px 0px 0px!important;
+  margin: 0px 120px 0px 15px!important;
   shape-outside: circle();
-  border-radius: 50%;
+  border-radius: 40%;
   border: 5px double rgba(0, 0, 0, 0.65);
   width: 275px;
   height: 275px;
