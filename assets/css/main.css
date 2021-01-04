@@ -73,7 +73,7 @@ li {
  
 /*-------------------- INTRO --------------------*/
 #intro-container {
-  padding: 155px 0 0 0!important;
+  padding: 325px 0 0 0!important;
   max-width: 100%!important;
   margin: 0 0!important;
   background: linear-gradient(135deg, rgba(251, 159, 0, 0.15), rgba(255, 133, 27, 0.15), rgba(220, 20, 60, 0.15), rgba(156, 89, 182, 0.15), rgba(68, 132, 206, 0.15), rgba(34, 139, 34, 0.15), rgba(255, 217, 0, 0.15));
@@ -91,14 +91,11 @@ li {
   height: 600px!important;
   background-image: url("../images/mountain-range.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #intro-container-text a {
   text-decoration: none!important;
-}
-
-#intro-container-text {
-  padding: 25px 0 0 0;
 }
 
 #intro-container-text h1 {
@@ -161,7 +158,7 @@ li {
 
 /*-------------------- SKILLS --------------------*/
 #skills-container {
-  margin: 100px auto!important;
+  margin: 150px auto 250px auto!important;
 }  
 
 .skill-card {
@@ -231,6 +228,7 @@ li {
   
 /*-------------------- CONTACT --------------------*/
 #contact-container {
+  padding: 35px 0 100px 0;
   max-width: 100%!important;
   background-color: #a1edf0;
 }
