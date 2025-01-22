@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
   </head>
   <body>
-    <div class="container" id="navbar-container">
-      <nav class="navbar navbar-expand navbar-light bg-light fixed-top navbar-bordered">
+    <div class="container" id="navbar">
+      <nav class="navbar navbar-expand navbar-light fixed-top">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link navbar-brand" id="intro">Andrew T. Kelley</a></li>
+          <li class="nav-item nav-link" id="nav-item-name" onClick="scrollToAnchor('intro')">Andrew T. Kelley</li>
         </ul>
   
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -26,17 +26,17 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" id="skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" id="portfolio">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" id="contact">Contact</a></li>
+            <li class="nav-item nav-link" onClick="scrollToAnchor('skills')">Skills</li>
+            <li class="nav-item nav-link" onClick="scrollToAnchor('portfolio')">Portfolio</li>
+            <li class="nav-item nav-link" onClick="scrollToAnchor('contact')">Contact</li>
           </ul>
         </div>
       </nav>  
     </div>  
 
-    <div class="container" id="intro-container">
-      <div class="container" id="intro-container-image">
-        <div class="row text-center" id="intro-container-text">
+    <div class="container" id="intro">
+      <div class="container" id="intro-image">
+        <div class="row text-center" id="intro-text">
           <div class="col-md-12">
             <h1>Andrew T. Kelley</h1>                
             <h5>Full Stack Web Developer</h5>
@@ -54,7 +54,7 @@
       </div>
     </div>
   
-    <div class="container" id="skills-container">
+    <div class="container" id="skills">
       <h1 class="text-center title">Skills</h1>
       <hr>
       <div class="row">
@@ -69,6 +69,7 @@
             <div class="skill-card-item"><image src="assets/images/skills/bootstrap.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Bootstrap</span></div>
             <div class="skill-card-item"><image src="assets/images/skills/materialize.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Materialize</span></div>
             <div class="skill-card-item"><image src="assets/images/skills/semantic-ui.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Semantic UI</span></div>
+            <div class="skill-card-item"><image src="assets/images/skills/tailwind.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Tailwind CSS</span></div>
           </div>     
         </div>
 
@@ -84,6 +85,7 @@
             <div class="skill-card-item"><image src="assets/images/skills/php.png" class="skill-card-icon"></image><span class="skill-card-icon-title">PHP</span></div>
             <div class="skill-card-item"><image src="assets/images/skills/python.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Python</span></div>
             <div class="skill-card-item"><image src="assets/images/skills/ruby.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Ruby</span></div>
+            <div class="skill-card-item"><image src="assets/images/skills/go.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Go</span></div>
           </div>     
         </div>
 
@@ -94,6 +96,7 @@
             <hr>
             <div class="skill-card-item"><image src="assets/images/skills/angular.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Angular</span></div>
             <div class="skill-card-item"><image src="assets/images/skills/react.png" class="skill-card-icon"></image><span class="skill-card-icon-title">React</span></div>
+            <div class="skill-card-item"><image src="assets/images/skills/vue.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Vue</span></div>
             <div class="skill-card-item"><image src="assets/images/skills/redux.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Redux</span></div>
             <div class="skill-card-item"><image src="assets/images/skills/django.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Django</span></div>
             <div class="skill-card-item"><image src="assets/images/skills/rails.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Rails</span></div>
@@ -113,12 +116,13 @@
             <div class="skill-card-item"><image src="assets/images/skills/mongo.png" class="skill-card-icon"></image><span class="skill-card-icon-title">MongoDB</span></div>
             <div class="skill-card-item"><image src="assets/images/skills/git.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Git</span></div>
             <div class="skill-card-item"><image src="assets/images/skills/heroku.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Heroku</span></div>
+            <div class="skill-card-item"><image src="assets/images/skills/next.png" class="skill-card-icon"></image><span class="skill-card-icon-title">Next</span></div>
           </div>     
         </div>
       </div>
     </div>
 
-    <div class="container" id="portfolio-container">
+    <div class="container" id="portfolio">
       <h1 class="text-center title">Portfolio</h1>
       <hr>  
       <div class="row">
@@ -185,24 +189,24 @@
       </div>
     </div>
 
-    <div class="container" id="contact-container">
+    <div class="container" id="contact">
       <div class="row">
         <div class="col-md-12">
           <h1 class="text-center title">Contact</h1>
         </div>
       </div>
-      <div id="contact-container-box">
-        <div class="contact-container-icon">
+      <div id="contact-box">
+        <div class="contact-icon">
           <a target="_blank" href="https://www.linkedin.com/in/andrewtkelley/">
             <i class ="fab fa-linkedin fa-7x icons"></i>
           </a>
         </div>
-        <div class="contact-container-icon">
+        <div class="contact-icon">
           <a target="_blank" href="https://github.com/atkelley">
             <i class ="fab fa-github fa-7x icons"></i>
           </a>
         </div>
-        <div class="contact-container-icon">
+        <div class="contact-icon">
           <a target="_blank" href="mailto:kelley.andrew.t@gmail.com">
             <i class ="far fa-envelope fa-7x icons"></i>
           </a>
@@ -210,14 +214,13 @@
       </div>
     </div>
 
-    <footer class="footer py-2 text-center" id="footer-container">
-      <span class="text-muted"><a target="_blank" href="https://atkelley.github.io/">atkelley</a> &copy; 2024</span>
+    <footer class="footer text-center">
+      <span class="text-muted"><a target="_blank" href="https://atkelley.github.io/">atkelley</a> &copy; 2025</span>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="assets/js/animatescroll.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

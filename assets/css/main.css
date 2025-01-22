@@ -13,99 +13,84 @@ li {
   color: rgba(0, 0, 0, 0.5);
 }
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes backgroundImageColorShift {
     0%   { background-position:   0%  7% }
     50%  { background-position: 100% 94% }
     100% { background-position:   0%  7% }
 }
 
-@-moz-keyframes AnimationName {
+@-moz-keyframes backgroundImageColorShift {
   0%   { background-position:   0%  7% }
   50%  { background-position: 100% 94% }
   100% { background-position:   0%  7% }
 }
 
-@-o-keyframes AnimationName {
+@-o-keyframes backgroundImageColorShift {
   0%   { background-position:   0%  7% }
   50%  { background-position: 100% 94% }
   100% { background-position:   0%  7% }
 }
 
-@keyframes AnimationName {
+@keyframes backgroundImageColorShift {
   0%   { background-position:   0%  7% }
   50%  { background-position: 100% 94% }
   100% { background-position:   0%  7% }
 }
   
 /*-------------------- NAVBAR --------------------*/
-#navbar-container {
+#navbar {
   font-family: 'Kanit', sans-serif;
   font-weight: 400;
   max-width: 100%;
   margin: 0 0 0 0;
 }
 
-.navbar-brand {
-  font-size: 1.75rem!important;
+#nav-item-name {
+  font-size: 1.75rem;
   font-weight: 500;
 }
 
 .navbar {
   padding: 10px 200px;
-  background: rgba(255, 255, 255, 0.8)!important;
-  transition: all 0.2s ease-in;
-}
-  
-.navbar-bordered {
-  animation: shadow-fade-in 1s;
+  background: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 1px 5px 0px rgba(128, 128, 128, 0.75);
-  -webkit-box-shadow: 0px 1px 5px 0px rgba(128, 128, 128, 0.75);
-  -moz-box-shadow: 0px 1px 5px 0px rgba(128, 128, 128, 0.75);
-}
-  
-@keyframes shadow-fade-in {
-  0%   { box-shadow: none; }
-  100% { box-shadow: 0px 1px 5px 0px rgba(128, 128, 128, 0.75);
-          -webkit-box-shadow: 0px 1px 5px 0px rgba(128, 128, 128, 0.75);
-          -moz-box-shadow: 0px 1px 5px 0px rgba(128, 128, 128, 0.75);
-        }
 }
  
 /*-------------------- INTRO --------------------*/
-#intro-container {
-  padding: 325px 0 0 0!important;
-  max-width: 100%!important;
-  margin: 0 0!important;
+#intro {
+  padding: 325px 0 0 0;
+  max-width: 100%;
+  margin: 0;
   background: linear-gradient(135deg, rgba(251, 159, 0, 0.15), rgba(255, 133, 27, 0.15), rgba(220, 20, 60, 0.15), rgba(156, 89, 182, 0.15), rgba(68, 132, 206, 0.15), rgba(34, 139, 34, 0.15), rgba(255, 217, 0, 0.15));
   background-size: 1200% 1200%;
-  -webkit-animation: AnimationName 85s ease infinite;
-  -moz-animation: AnimationName 85s ease infinite;
-  -o-animation: AnimationName 85s ease infinite;
-  animation: AnimationName 85s ease infinite;
+  -webkit-animation: backgroundImageColorShift 50s ease infinite;
+  -moz-animation: backgroundImageColorShift 50s ease infinite;
+  -o-animation: backgroundImageColorShift 50s ease infinite;
+  animation: backgroundImageColorShift 50s ease infinite;
   height: 100%;
   box-shadow: 0px 4px 6px 0px rgba(128, 128, 128, 0.75);
 }
 
-#intro-container-image {
-  max-width: 100%!important;
-  height: 600px!important;
+#intro-image {
+  max-width: 100%;
+  height: 600px;
   background-image: url("../images/mountain-range.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#intro-container-text a {
-  text-decoration: none!important;
+#intro-text a {
+  text-decoration: none;
 }
 
-#intro-container-text h1 {
+#intro-text h1 {
   color: rgba(0, 0, 0, 0.65);
   font-family: 'Kanit', sans-serif;
   font-weight: 700;
   font-size: 4.75rem;
 }
 
-#intro-container-text h5 {
+#intro-text h5 {
   color: rgba(0, 0, 0, 0.65);
   font-family: 'Kanit', sans-serif;
   font-weight: 700;
@@ -117,48 +102,15 @@ li {
   color: rgba(255, 255, 255, 1.0);
   padding-left: 5px;
   padding-right: 5px;
-  transition: all 0.8s;
 }
 
 .icons:hover {
   color: rgba(0, 0, 0, 0.65);
 }
-  
-/*-------------------- ABOUT --------------------*/
-#about-container {
-  margin: 80px auto 120px auto!important;
-}
-
-#about-container-inner {
-  margin: 60px auto!important;
-}
-
-#about-container p {
-  margin: 40px 0px!important;
-  font-size: 1.05rem;
-  font-weight: 400;
-  color: #BDBAB9;
-}
-
-#profile-pic {
-  box-shadow: 5px 5px 5px 0px rgba(128, 128, 128, 1.0);
-  margin: 0px 120px 0px 15px!important;
-  shape-outside: circle();
-  border-radius: 40%;
-  border: 5px double rgba(0, 0, 0, 0.65);
-  width: 275px;
-  height: 275px;
-  background: linear-gradient(135deg, rgba(251, 159, 0, 0.15), rgba(255, 133, 27, 0.15), rgba(220, 20, 60, 0.15), rgba(156, 89, 182, 0.15), rgba(68, 132, 206, 0.15), rgba(34, 139, 34, 0.15), rgba(255, 217, 0, 0.15));
-  background-size: 600% 600%;
-  -webkit-animation: AnimationName 85s ease infinite;
-  -moz-animation: AnimationName 85s ease infinite;
-  -o-animation: AnimationName 85s ease infinite;
-  animation: AnimationName 85s ease infinite;
-}
 
 /*-------------------- SKILLS --------------------*/
-#skills-container {
-  margin: 150px auto 250px auto!important;
+#skills {
+  padding: 150px 0px 250px 0px;
 }  
 
 .skill-card {
@@ -166,7 +118,7 @@ li {
   box-shadow: 5px 5px 5px 0px rgba(128, 128, 128, 1.0);
   border: 5px double rgba(0, 0, 0, 0.65);
   border-radius: 25px;
-  height: 475px;
+  height: 500px;
 }
 
 .skill-card-column-icon {
@@ -177,8 +129,11 @@ li {
   background-color: rgba(255, 255, 255, 1.0);
 }
 
-.skill-card-item{
-  width: 100%;
+.skill-card-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 5px;
   padding: 5px 0px 5px 10px;
 }
 
@@ -194,8 +149,8 @@ li {
 }
 
 /*-------------------- PORTFOLIO --------------------*/
-#portfolio-container {
-  margin: 200px auto!important;
+#portfolio {
+  padding: 100px 0px;
 }  
 
 .portfolio-card {
@@ -227,41 +182,98 @@ li {
 }
   
 /*-------------------- CONTACT --------------------*/
-#contact-container {
-  padding: 35px 0 100px 0;
-  max-width: 100%!important;
+#contact {
+  padding: 55px 0 100px 0;
+  max-width: 100%;
   background-color: #a1edf0;
 }
 
-#contact-container h1 {
+#contact h1 {
   font-size: 4rem;
-  margin: 0!important;
+  margin: 0;
   padding: 70px 0px 100px 0px;
 }
 
-#contact-container-box {
-  display: flex;
+#contact-box {
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  text-align: center;
   padding: 0 0 165px 0;
 }
 
-.contact-container-icon {
+.contact-icon {
   margin: 60px;
   display: inline-block;
 }
-  
-/*-------------------- FOOTER --------------------*/
-#footer-container {
-  background-color: #a1edf0;
-  padding: 0 0 20px 0!important;
+
+.contact-icon:nth-of-type(1) {
+  /* position: absolute;
+  left: -100px; */
+
+
+
 }
 
-#footer-container a {
+
+.slideFromLeft {
+  animation: slideFromLeft 0.5s;
+  -webkit-animation: slideFromLeft 0.5s;
+}
+
+.slideFromBelow{
+  animation: slideFromBelow 0.5s;
+  -webkit-animation: slideFromBelow 0.5s;
+}
+
+.slideFromRight {
+  animation: slideFromRight 0.5s;
+  -webkit-animation: slideFromRight 0.5s;
+}
+
+@keyframes slideFromLeft {
+    0% { transform: translateX(-250px); }
+  100% { transform: translateX(0px); }
+}
+
+@-webkit-keyframes slideFromLeft {
+    0% { transform: translateX(-250px); }
+  100% { transform: translateX(0px); }
+}
+
+@keyframes slideFromBelow {
+  0% { transform: translateY(250px); }
+100% { transform: translateY(0px); }
+}
+
+@-webkit-keyframes slideFromBelow {
+  0% { transform: translateY(250px); }
+100% { transform: translateY(0px); }
+}
+
+@keyframes slideFromRight {
+  0% { transform: translateX(250px); }
+100% { transform: translateX(0px); }
+}
+
+@-webkit-keyframes slideFromRight {
+  0% { transform: translateX(250px); }
+100% { transform: translateX(0px); }
+}
+  
+/*-------------------- FOOTER --------------------*/
+.footer {
+  background-color: #a1edf0;
+  padding: 0 0 20px 0;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.footer a {
   color: rgba(0, 0, 0, 0.5);
 }
 
-#footer-container a:hover {
+.footer a:hover {
   cursor: pointer;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.65);

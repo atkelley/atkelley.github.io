@@ -1,27 +1,40 @@
-function setScrollingEvent(){
-  $('#intro').click(function(){
-    $('#intro-container').animatescroll({padding: 200});
-  });
+const scrollToAnchor = (id) => {
+  document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+}
 
-  $('#about').click(function(){
-    $('#about-container').animatescroll({padding: 150});
-  });
+const observer = new IntersectionObserver(entries => {
+  entries.forEach((entry, index) => {
+    if (index == 0 || index == 3) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('slideFromLeft');
+      } else {
+        entry.target.classList.remove('slideFromLeft');
+      }
+    }
 
-  $('#skills').click(function(){
-    $('#skills-container').animatescroll({padding: 100});
-  });
+    if (index == 1 || index == 4) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('slideFromBelow');
+      } else {
+        entry.target.classList.remove('slideFromBelow');
+      }
+    }
 
-  $('#portfolio').click(function(){
-    $('#portfolio-container').animatescroll({padding: 100});
+    if (index == 2 || index == 5) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('slideFromRight');
+      } else {
+        entry.target.classList.remove('slideFromRight');
+      }
+    }
   })
-
-  $('#contact').click(function(){
-    $('#contact-container').animatescroll({padding: 25});
-  });
-}   
-
-$(document).ready(function(){
-  setScrollingEvent();
 });
 
+for (let icon of document.getElementsByClassName('contact-icon')) {
+  observer.observe(icon);
+}
+
+for (let icon of document.querySelectorAll('#intro-text div a i')) {
+  observer.observe(icon);
+}
 
